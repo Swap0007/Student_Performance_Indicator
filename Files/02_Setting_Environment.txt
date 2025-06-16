@@ -1,0 +1,34 @@
+
+Setting up the environment
+1. ** now run in terminal:
+
+	conda create -p myenv python==3.13 -y
+	
+	conda activate C:\Mahesh\ML_Project\myenv
+	
+if error in activation:
+	CondaError: Run 'conda init' before 'conda activate'
+	
+type in terminal :
+	conda init powershell
+
+still not working use change the execution policy
+	Open PowerShell as Administrator:
+	Press Win + X and select Windows PowerShell (Admin) or Terminal (Admin) if using Windows Terminal.
+
+	Get-ExecutionPolicy
+	This will show your current execution policy (it might be set to Restricted).
+
+	Set-ExecutionPolicy RemoteSigned
+	When prompted, type Y to confirm
+
+	Get-ExecutionPolicy
+
+
+python -m pip install --upgrade pip setuptools
+
+python -m pip install --upgrade pip
+
+create the folder src --> __init__.py
+
+pip install -r requirements.txt
